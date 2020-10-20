@@ -39,12 +39,15 @@ println(mouseX, mouseY);
 
 // Step 4: Make it so when the program runs the ball slides off the screen exiting at the point (500, 500)
 
+rect(var1, var2, var3, var4);
+//^^^ to make the dots dance put rectangle above them
+
 //These are the ellipses
 fill(random(0,255), random(0,255), random(0,255));
 ellipse(mouseX - random(-30,30), mouseY - random(-30,30), 10, 10)
 fill(r1, g1, b1);
-rect(var1, var2, var3, var4);
 
+//^^these are always changing so we put them in the draw loop
 
 }
 
@@ -60,5 +63,6 @@ var4 = random(50, 400);
 r1 = random(1,255);
 g1 = random(1,255);
 b1 = random(1,255);
+//^^These only differ every time you click mouse so put them in void mousePressed.
 }
 
